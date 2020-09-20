@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>blurhash-image demo</title>
+    <style>
+      blurhash-image {
+        display: block;
+        width: 400px;
+        height: 300px;
+        background: #888 no-repeat center;
+        background-size: 100% 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>&lt;blurhash-image&gt; demo</h1>
+    <div id="exampleEl">
+      <blurhash-image blurhash="LGF5]+Yk^6#M@-5c,1J5@[or[Q6."></blurhash-image>
+    </div>
+    <pre id="codeEl"></pre>
+    <script>
+      codeEl.textContent = exampleEl.innerHTML.trim()
+    </script>
+    <script async src="dist/dtinthblurhashimage.umd.production.min.js"></script>
+  </body>
+</html>
